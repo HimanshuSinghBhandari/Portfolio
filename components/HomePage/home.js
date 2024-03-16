@@ -73,8 +73,12 @@ export default function Home() {
                     repeat: Infinity,
                 }
             }}
+            onClick={onClickNext}
             >
-
+                <div className="flex">
+                    <FiChevronDown />
+                    <span className="text-sm lg:text-lg">A B O U T</span>
+                </div>
             </motion.div>
             </motion.div>
 
