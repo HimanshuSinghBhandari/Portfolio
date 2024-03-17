@@ -11,7 +11,7 @@ export default function Home() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.1],
-    ["rgb(255, 230, 109)", "rgb(125 211 252)"]
+    ["  rgb(241 , 124 , 96)", "rgb(125 211 252)"]
   );
   const onClickNext = () => {
     router.push("#about");

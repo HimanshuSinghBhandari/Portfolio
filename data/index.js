@@ -19,21 +19,21 @@ export const navBarData = [
 export const aboutData = [
   {
     num: 1,
-    title: "매일 studying 프론트엔드 개발자.",
+    title: "A Full Stack Developer, fueled by chai and friends, straight outta from India",
     contetnt:
-      "비전공 프론트엔드 개발자로서 부족한 정보량을 극복하기 위해 매일 조금씩 정보를 정리하고, 공식 문서를 반복적으로 읽는 노력을 하였습니다. 덕분에 필요 기술 스택을 쌓을 수 있었고, 항상 도전적인 자세로 일에 임하고자 합니다.",
+      "It's not just a job for me; it's my creative playground, where I get to craft amazing web experiences . Being a Developer isn't just what I do, it's who I am - a tech enthusiast on a mission to build innovative, user-friendly applications that make a real difference in people's lives.",
   },
   {
     num: 2,
-    title: "코드에 Life를 불어넣는 것을 좋아합니다.",
+    title: "I love bringing life into my code",
     contetnt:
-      "웹 애니메이션은 사용자 경험을 더욱 풍부하게 만들어주는 힘이라고 생각합니다. 이를 통해 사용자에게 이야기를 전달하는 것을 즐기며, 웹페이지를 탐험하는 과정에서의 매력을 찾을 수 있도록 노력합니다.",
+      "Don't ask me how I do it, because even I'm not sure. Somehow, I manage to bring my code to life. I guess you could say I've mastered the art of googling my way through it all.",
   },
   {
     num: 3,
-    title: "Ice Breaking능력과 상대방에게 호기심이 많습니다.",
+    title: "I'm open to freelancing and internships",
     contetnt:
-      "팀원과 즐거운 협업은 프로젝트 성공에 중요한 역할을 합니다. 제 긍정적인 태도와 친화력은 팀에 활기를 불어넣으며, 매번 함께 일하고 싶은 동료가 되기 위해 노력합니다.",
+      "Getting around the industry in 2024 is tough, really tough. But I'm sticking to it, determined to find my place and make progress, bit by bit.",
   },
 ];
 
