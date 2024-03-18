@@ -34,7 +34,7 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-4xl mb-5 font-samlip sm:text-5xl lg:text-8xl"
+          className="text-4xl mb-5 font-samlip sm:text-5xl lg:text-8xl text-white/90 text-outline"
           style={{ scrollY, scale }}
         >
           Hello, I'm Himanshu  

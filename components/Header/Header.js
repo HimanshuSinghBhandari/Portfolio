@@ -6,7 +6,7 @@ import { navBarData } from "../../data/index";
 export default function Header() {
   const router = useRouter();
   return (
-    // 불투명한 배너 사용(backdrop)
+     
     <motion.header
       className="fixed top-0 left-0 right-0 z-30 flex flex-row   select-none h-12 lg:h-20 font-samlip"
       initial={{ opacity: 0 }}
