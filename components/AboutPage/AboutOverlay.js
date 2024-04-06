@@ -33,8 +33,8 @@
      exit={{opacity: 0, y: 10}}
      className="absolute left-0 right-0 mx-auto my-0 top-[10vh] lg:top-[5vh] bottom-auto h-[80vh] lg:h-[90vh] w-[90vw] rounded-[15px] bg-white"
      onClick={WrapperClick} >
-        <section>
-            <div>
+        <section className="flex flex-row p-5 gap-5 sm:p-8 lg:p-8 h-full">
+            <div className="hidden lg:grid lg:grid-cols-2 gap-5 lg:w-1/2 text-gray-400 font-jalnan hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-green-300 hover:via-blue-500 hover:to-purple-600 hover:transition hover:duration-500">
                 <motion.div>
                     <Image>
 
@@ -52,7 +52,7 @@
              </div>
              <motion.div>
                 <Image>
-                    
+
                 </Image>
              </motion.div>
             </div>
