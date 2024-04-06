@@ -43,7 +43,11 @@
                <motion.div
                className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[30rem] lg:w-[30rem]"
                whileHover={{ y: -10}}>
-                  <Image>
+                  <Image
+                  src={aboutProfile}
+                  loading="lazy"
+                  style={{width: "100%", height: "100%", objectFit: "cover"}}
+                  className="rounded-full shadow-lg">
 
                   </Image>
                </motion.div>
