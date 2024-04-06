@@ -67,6 +67,7 @@
                   <Button className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5" onClick={toggleView}> Discover more </Button>
                </motion.div>
             </motion.div>
+             {view ? <Overlay toggleView={toggleView}/> : null}
          </AnimatePresence>
       </motion.section>
    )
