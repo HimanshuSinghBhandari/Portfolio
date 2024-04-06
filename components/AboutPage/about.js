@@ -1,5 +1,5 @@
  import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
- //import aboutProfile from "../../public/assets/profile/profile2.jpg";
+ import aboutProfile from "../../public/assets/profile/profile1.jpg";
  import {aboutData} from "../../data/index";
  import { useRouter } from "next/router";
  import { useState } from "react";
@@ -13,5 +13,43 @@
     const { scrollYProgress} = useScroll();
     const router = useRouter();
 
-   
+   const backgroundColor = useTransform(
+       scrollYProgress,
+       [0.35, 0.43],
+       ["rgb(125 211 252)" , "rgb(253 224 71)"]
+   );
+
+   //overlay
+   const toggleView = () => {
+      setView((prev) => !prev);
+      router.push("#about");
+   };
+   return(
+      <motion.section
+      id="about"
+      className="h-[150vh] w-full relative flex flex-col items-center overflow-hidden"
+      style={{ scrollYProgress, backgroundColor}}>
+         <HeaderTitle />
+         <AnimatePresence>
+            <motion.div
+            className="h-screen flex flex-col items-center justify-center lg:justify-evenly lg:flex-row"
+            key="aboutContainer"
+            initial={{opacity: 0 , y: 50}}
+            whileInView={{
+               opacity:1,
+               y:0,
+               transition: {delay: 0.5, duration: 1},
+            }}>
+               <motion.div
+               className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[30rem] lg:w-[30rem]"
+               whileHover={{ y: -10}}>
+                  <Image>
+
+                  </Image>
+               </motion.div>
+
+            </motion.div>
+         </AnimatePresence>
+      </motion.section>
+   )
  }

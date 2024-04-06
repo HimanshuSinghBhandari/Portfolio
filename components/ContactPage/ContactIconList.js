@@ -30,7 +30,7 @@ export default function ContactIconList()
             <ContactIcon title="Instagram" url="https://www.instagram.com/imhimanshubhandari">
                 <FaInstagram size="75" />
             </ContactIcon>
-            <ContactIcon title="gmail" url="himanshubhandari4675@gmail.com">
+            <ContactIcon title="gmail" url="mailto:himanshubhandari4675@gmail.com">
                 <MdEmail size="75" />
             </ContactIcon>
             <ContactIcon title="twitter" url="https://twitter.com/himanshu_14rt">
