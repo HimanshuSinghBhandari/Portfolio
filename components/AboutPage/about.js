@@ -41,17 +41,31 @@
                transition: {delay: 0.5, duration: 1},
             }}>
                <motion.div
-               className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[30rem] lg:w-[30rem]"
+               className="h-[10rem] w-[10rem] sm:h-[30rem] sm:w-[30rem] lg:h-[27rem] lg:w-[27rem] md:h-[30rem] md:w-[30rem]"
                whileHover={{ y: -10}}>
                   <Image
                   src={aboutProfile}
                   loading="lazy"
                   style={{width: "100%", height: "100%", objectFit: "cover"}}
                   className="rounded-full shadow-lg">
-
                   </Image>
                </motion.div>
-
+               <motion.div className="relative w-[80%] lg:w-1/2">
+                  <ul className="relative cursor-default">
+                     {aboutData.map((data, index) => (
+                        <motion.li
+                        key={index}
+                        whileHover={{
+                           scale: 1.1,
+                           transition: { duration: 0.5},
+                        }}>
+                        <p className="block font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 text-black">{data.title}</p>
+                        <p className="font-thin text-xs sm:text-md lg:text-xl">{data.contetnt}</p>
+                        </motion.li>
+                     ))}
+                  </ul>
+                  <Button className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5" onClick={toggleView}> Discover more </Button>
+               </motion.div>
             </motion.div>
          </AnimatePresence>
       </motion.section>
