@@ -1,6 +1,7 @@
  import {motion} from "framer-motion";
  import Image from "next/image";
  import BackImg1 from "../../public/assets/profile/profile2.jpg";
+ import BackImg2 from "../../public/assets/profile/profile3.jpg";
  import {overlayData} from "../../data/index"; 
  import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
  import { useRouter } from "next/router";
@@ -35,26 +36,46 @@
      onClick={WrapperClick} >
         <section className="flex flex-row p-5 gap-5 sm:p-8 lg:p-8 h-full">
             <div className="hidden lg:grid lg:grid-cols-2 gap-5 lg:w-1/2 text-gray-400 font-jalnan hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-green-300 hover:via-blue-500 hover:to-purple-600 hover:transition hover:duration-500">
-                <motion.div>
+                <motion.div
+                initial={{ y: 0}}
+                whileHover={{ y: -5}}
+                className="hidden lg:block overflow-hidden rounded-[15px] shadow-xl">
+                    <Image
+                    src={BackImg1}
+                    style={{height: "100%", objectFit:"cover"}}>
+                    </Image>
+                </motion.div>
+             <div className="hidden lg:block">
+                <h2 className="flex justify-center items-center text-center h-full text-4xl">
+                    हिमांशु
+                    <br />
+                    Himanshu
+                </h2>
+             </div>
+             <div className="hidden lg:block">
+                <p className="flex justify-center items-center text-center h-full text-4xl font-bold">
+                2002. 02. 08.
+                </p>
+             </div>
+             <motion.div
+             initial={{ y: 0}}
+             whileHover={{y: -5}}
+             className="hidden lg:block overflow-hidden shadow-xl rounded-[15px]">
+                <Image
+                src={BackImg2}
+                style={{ height: "100%", objectFit: "cover"}}>
+                </Image>
+             </motion.div>
+            </div>
+            <div className="lg:w-1/2 flex flex-col gap-5 h-full text-gray-400 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r  hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:transition hover:duration-500">
+                <motion.div
+                initial={{y:0}}
+                whileHover={{y:-5}}
+                className="h-1/2 overflow-hidden rounded-tl-[15px] rounded-[15px] shadow-xl">
                     <Image>
 
                     </Image>
                 </motion.div>
-             <div>
-                <h2>
-                    <br />
-                </h2>
-             </div>
-             <div>
-                <p>
-
-                </p>
-             </div>
-             <motion.div>
-                <Image>
-
-                </Image>
-             </motion.div>
             </div>
         </section>
         
