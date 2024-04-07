@@ -2,6 +2,7 @@
  import Image from "next/image";
  import BackImg1 from "../../public/assets/profile/profile2.jpg";
  import BackImg2 from "../../public/assets/profile/profile3.jpg";
+ import BackImg3 from "../../public/assets/profile/profile5.jpg";
  import {overlayData} from "../../data/index"; 
  import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
  import { useRouter } from "next/router";
@@ -72,10 +73,26 @@
                 initial={{y:0}}
                 whileHover={{y:-5}}
                 className="h-1/2 overflow-hidden rounded-tl-[15px] rounded-[15px] shadow-xl">
-                    <Image>
-
+                    <Image
+                    src={BackImg3}
+                    style={{height: "100%", objectFit: "cover"}}>
                     </Image>
                 </motion.div>
+                <div className="h-[90%] sm:h-1/2 justify-between flex flex-col">
+                    <div className="lg:hidden font-jalnan text-black italic">
+                        <h2 className="text-xl lg:text-3xl font-bold">
+                            Himanshu Singh 
+                        </h2>
+                        <p className="text-lg lg:text-xl font-bold">2002. 08. 02</p>
+                    </div>
+                    <div className="font-jalnan text-lg sm:text-3xl">
+                    React, NextJS, TypeScript, JavaScript, Node.js, mongoDB
+                    Redux, FramerMotion, TailwindCSS, express
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         </section>
         
