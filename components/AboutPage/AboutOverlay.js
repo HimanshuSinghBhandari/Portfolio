@@ -2,7 +2,7 @@
  import Image from "next/image";
  import BackImg1 from "../../public/assets/profile/profile2.jpg";
  import BackImg2 from "../../public/assets/profile/profile3.jpg";
- import BackImg3 from "../../public/assets/profile/profile5.jpg";
+ import BackImg3 from "../../public/assets/profile/profile4.jpg";
  import {overlayData} from "../../data/index"; 
  import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
  import { useRouter } from "next/router";
@@ -63,7 +63,7 @@
              whileHover={{y: -5}}
              className="hidden lg:block overflow-hidden shadow-xl rounded-[15px]">
                 <Image
-                src={BackImg2}
+                src={BackImg3}
                 style={{ height: "100%", objectFit: "cover"}}>
                 </Image>
              </motion.div>
@@ -74,7 +74,7 @@
                 whileHover={{y:-5}}
                 className="h-1/2 overflow-hidden rounded-tl-[15px] rounded-[15px] shadow-xl">
                     <Image
-                    src={BackImg3}
+                    src={BackImg2}
                     style={{height: "100%", objectFit: "cover"}}>
                     </Image>
                 </motion.div>
@@ -89,13 +89,31 @@
                     React, NextJS, TypeScript, JavaScript, Node.js, mongoDB
                     Redux, FramerMotion, TailwindCSS, express
                     </div>
-                    <div>
-                        
-                    </div>
+                    <div className="relative text-black"> 
+                     <motion.div
+                     className="absolute bottom-0 right-0 flex justify-center items-center font-thin cursor-pointer h-10 hover:bg-black/20 py-1 px-3 rounded-[15px] text-sm"
+                     initial={{opacity: 0}}
+                     whileInView={{
+                        opacity: [0,1,0],
+                        transition: {
+                         duration: 1,
+                         repeat: Infinity,
+                        },
+                     }}
+                     onClick={onClickNext} >
+                       <div className="flex items-center justify-center w-auto">
+                        <span className="hidden sm:block text-center">
+                           P R O J E C T 
+                        </span>
+                        <FaAngleRight />
+                       </div>
+                     </motion.div>
+                     </div>
                 </div>
             </div>
         </section>
         
      </motion.div>
-    </motion.div>);
+    </motion.div>
+    );
  }
