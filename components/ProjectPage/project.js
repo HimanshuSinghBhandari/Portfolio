@@ -20,14 +20,21 @@ export default function Project()
 
     //horizontal Gsap
     useEffect(() => {
-
+          <>
+          </>
     }, []);
 
     return(
-        <motion.section>
+        <motion.section
+        id='project'
+        className='relative project-section overflow-hidden'
+        style={{scrollYProgress, backgroundColor}}>
             <HeaderTitle />
-            <div>
-                <div>
+            <div ref={triggerRef} className='project-wrapper flex h-[100vh] w-full'>
+                <div
+                ref={sectionRef}
+                className='relative flex flex-row items-center mt-12'
+                >
                     <ProjectcardContent />
                 </div>
             </div>
