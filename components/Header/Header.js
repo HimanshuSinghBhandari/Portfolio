@@ -8,7 +8,7 @@ export default function Header() {
   return (
      
     <motion.header
-      className="fixed top-0 left-0 right-0 z-30 flex flex-row   select-none h-12 lg:h-20 font-samlip"
+      className="fixed top-0 left-0 right-0 z-30 flex flex-row backdrop-blur-md select-none h-12 lg:h-20 font-samlip"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
     >

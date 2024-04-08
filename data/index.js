@@ -1,8 +1,8 @@
-// // Image에서 사진은 import해서 보내야 사진이 보여진다.
-// import Project_1 from "../public/assets/project/project1.png";
-// import Project_2 from "../public/assets/project/project2.png";
-// import Project_3 from "../public/assets/project/project3.png";
-// import Project_4 from "../public/assets/project/project4.png";
+ 
+import Project_1 from "../public/assets/project/project1.png";
+import Project_2 from "../public/assets/project/project2.png";
+import Project_3 from "../public/assets/project/project3.png";
+import Project_4 from "../public/assets/project/project4.png";
 // import Project_5 from "../public/assets/project/project5.png";
 // import Project_6 from "../public/assets/project/project6.png";
 // import Project_7 from "../public/assets/project/project7.png";
@@ -15,7 +15,6 @@ export const navBarData = [
   { num: 4, title: "CONTACT", asPath: "/#contact" },
 ];
 
-// // 소개 Data
 export const aboutData = [
   {
     num: 1,
@@ -37,95 +36,83 @@ export const aboutData = [
   },
 ];
 
-// // 소개 오버레이 Data
-// export const overlayData = [
-//   {
-//     num: 1,
-//     date: "2022.12. - 2023.04.",
-//     title: "멋쟁이사자처럼 4기 수료",
-//   },
-//   { num: 2, date: "2020.07. - 2022.11.", title: "포천시청 공무원 재직" },
-//   { num: 3, date: "2010.03. - 2018.02.", title: "강원대학교 환경공학과" },
-// ];
 
-// // 프로젝트 Data
-// export const projectData = [
-//   {
-//     num: 1,
-//     title: "실타래(Siltarae)",
-//     category: "팀프로젝트(4명) - 위버즈",
-//     date: "2023. 11. 19. ~ 2023. 12. 29.",
-//     refacDate: "2023. 1. 2. ~ 진행중",
-//     desc: "백엔드 협업으로 구현한 프로젝트입니다. NextJS, TypeScript를 기반으로 '실수'를 공유하는 웹페이지를 구현했습니다.",
-//     img: Project_7,
-//     url: "https://github.com/coding-union-kr/siltarae-fe",
-//     github_url: "https://github.com/coding-union-kr/siltarae-fe",
-//     notion_url:
-//       "https://ink-kite-3ad.notion.site/siltarae-dafff73e87e94276a3680eccc20d2754?pvs=4",
-//     skill: [
-//       "NextJS",
-//       "TypeScript",
-//       "Tanstack-Query",
-//       "Axios",
-//       "Tailwind",
-//       "YarnBerry",
-//     ],
-//   },
-//   {
-//     num: 2,
-//     title: "포트폴리오",
-//     category: "개인프로젝트",
-//     date: "2023. 11. 07. ~ 11. 29.",
-//     refacDate: "수시로 업데이트",
-//     desc: "NextJS로 만든 포트폴리오 웹페이지입니다. TailwindCSS로 모바일, 태블릿, 데스크탑 반응형을 적용했고, Framer-Motion, Gsap을 이용한 인터렉티브한 애니메이션 페이지를 만들었습니다.",
-//     img: Project_1,
-//     url: "https://portfolio-nextjs-tan-seven.vercel.app/",
-//     github_url: "https://github.com/seovee/portfolio-nextjs",
-//     notion_url:
-//       "https://ink-kite-3ad.notion.site/00331ba12bbe425f827303b6fd5450b6?pvs=4",
-//     skill: [
-//       "NextJS",
-//       "React",
-//       "TailwindCSS",
-//       "Framer-motion",
-//       "Gsap",
-//       "TypeWriter-effect",
-//     ],
-//   },
-//   {
-//     num: 3,
-//     title: "넷플릭스 클론페이지",
-//     category: "개인프로젝트 - Nomad Coder",
-//     date: "2023. 07. 17. ~ 07. 24.",
-//     refacDate: "2024. 01. 17 ~ 진행중",
-//     desc: "React, TypeScript를 이용한 넷플릭스 클론코딩입니다. fetch된 영화 API를 React-Query로 업데이트하도록 구현했습니다.",
-//     img: Project_2,
-//     url: "https://seovee.github.io/masterClass-Fin",
-//     github_url: "https://github.com/seovee/masterClass-Fin",
-//     notion_url:
-//       "https://ink-kite-3ad.notion.site/0cd84273002545b48e919741d08601ed?pvs=4",
-//     skill: [
-//       "React",
-//       "TypeScript",
-//       "React-route",
-//       "React-Query",
-//       "Framer-motion",
-//     ],
-//   },
-//   {
-//     num: 4,
-//     title: "I's gallary 갤러리",
-//     category: "팀프로젝트(5명) - 멋쟁이사자처럼",
-//     date: "2023. 03. 01. ~ 03. 29.",
-//     refacDate: "예정",
-//     desc: "React, Vite로 구성한 SNS 웹페이지입니다. 기획 & 디자인 & 개발을 직접 수행했습니다. Firebase로 회원가입/로그인을 연동하여 구현하고, Framer-Motion을 이용하여 애니메이션을 추가했습니다.",
-//     img: Project_3,
-//     url: "https://likelion-fe4-rp11.github.io/Asparagus/",
-//     github_url: "https://github.com/seovee/masterClass-Fin",
-//     notion_url:
-//       "https://ink-kite-3ad.notion.site/I-s-gallery-1f16669e89c342e09f13b68a625bee48?pvs=4",
-//     skill: ["React", "Framer-motion", "Firebase", "Figma"],
-//   },
+ 
+export const projectData = [
+  {
+    num: 1,
+    title: "Portfolio(Himanshu)",
+    category: "Personal Project",
+    date: "2024. 03. 03. ~ 2024. 04. 11.",
+    refacDate: "2024. 04. 11",
+    desc: "Its a  personal portfolio project, a carefully curated space where i display my skills, achievements, and projects to the world.",
+    img: Project_1,
+    url: "",
+    github_url: "",
+    skill: [
+      "NextJS",
+      "TypeScript",
+      "Tanstack-Query",
+      "Axios",
+      "Tailwind",
+      "YarnBerry",
+    ],
+  },
+  {
+    num: 2,
+    title: "포트폴리오",
+    category: "개인프로젝트",
+    date: "2023. 11. 07. ~ 11. 29.",
+    refacDate: "수시로 업데이트",
+    desc: "NextJS로 만든 포트폴리오 웹페이지입니다. TailwindCSS로 모바일, 태블릿, 데스크탑 반응형을 적용했고, Framer-Motion, Gsap을 이용한 인터렉티브한 애니메이션 페이지를 만들었습니다.",
+    img: Project_1,
+    url: "https://portfolio-nextjs-tan-seven.vercel.app/",
+    github_url: "https://github.com/seovee/portfolio-nextjs",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/00331ba12bbe425f827303b6fd5450b6?pvs=4",
+    skill: [
+      "NextJS",
+      "React",
+      "TailwindCSS",
+      "Framer-motion",
+      "Gsap",
+      "TypeWriter-effect",
+    ],
+  },
+  {
+    num: 3,
+    title: "넷플릭스 클론페이지",
+    category: "개인프로젝트 - Nomad Coder",
+    date: "2023. 07. 17. ~ 07. 24.",
+    refacDate: "2024. 01. 17 ~ 진행중",
+    desc: "React, TypeScript를 이용한 넷플릭스 클론코딩입니다. fetch된 영화 API를 React-Query로 업데이트하도록 구현했습니다.",
+    img: Project_2,
+    url: "https://seovee.github.io/masterClass-Fin",
+    github_url: "https://github.com/seovee/masterClass-Fin",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/0cd84273002545b48e919741d08601ed?pvs=4",
+    skill: [
+      "React",
+      "TypeScript",
+      "React-route",
+      "React-Query",
+      "Framer-motion",
+    ],
+  },
+  {
+    num: 4,
+    title: "I's gallary 갤러리",
+    category: "팀프로젝트(5명) - 멋쟁이사자처럼",
+    date: "2023. 03. 01. ~ 03. 29.",
+    refacDate: "예정",
+    desc: "React, Vite로 구성한 SNS 웹페이지입니다. 기획 & 디자인 & 개발을 직접 수행했습니다. Firebase로 회원가입/로그인을 연동하여 구현하고, Framer-Motion을 이용하여 애니메이션을 추가했습니다.",
+    img: Project_3,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+    github_url: "https://github.com/seovee/masterClass-Fin",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/I-s-gallery-1f16669e89c342e09f13b68a625bee48?pvs=4",
+    skill: ["React", "Framer-motion", "Firebase", "Figma"],
+  },
 //   {
 //     num: 5,
 //     title: "티빙 클론 - Taing",
@@ -166,4 +153,4 @@ export const aboutData = [
 //     github_url: "https://github.com/seovee/wanted-fe-challenge",
 //     skill: ["HTML", "CSS"],
 //   },
-// ];
+];
