@@ -63,6 +63,12 @@ export default function ProjectCardContent()
                         </p>
                      )}
                     </div>
+                    <div className="flex flex-col gap-2">
+                        <p className="font-normal text-sm sm:text-lg lg:text-xl">
+                          {data.desc}
+                        </p>
+
+                    </div>
                     
                 </div>
             </div>
