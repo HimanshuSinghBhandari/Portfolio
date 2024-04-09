@@ -79,12 +79,22 @@ export default function ProjectCardContent()
                         <FaGithub size="40" className="scale-[70%] sm:scale-100"></FaGithub>
                         </motion.a>
                        </Tooltip>
+                       <Tooltip title="Live" placement="top" color="primary">
+                        <motion.a
+                        href={data.url}
+                        title={`${data.title} Live`}
+                        target="_blank"
+                        rel="noopener noreference"
+                        whileHover={{ scale: 1.2}}
+                        whileTap={{scale: 0.9, transition: { duration: 0.2}}}>
+                        <FaHome size="40" className="scale-[70%] sm:scale-100"></FaHome>
+                        </motion.a>
+                       </Tooltip>
+                       </div>
                     </div>
-                    </div>
-                    
                 </div>
             </div>
         ))}
         </>
-     )
+     );
 }

@@ -20,8 +20,27 @@ export default function Project()
 
     //horizontal Gsap
     useEffect(() => {
-          <>
-          </>
+        const pin = gsap.fromTo(
+            sectionRef.current,
+            { translateX: "5vw" },
+            {
+              translateX: "-705vw",
+              ease: "none",
+              scrollTrigger: {
+                trigger: triggerRef.current,
+                start: "top top",
+                end: () =>
+                  `+=${document.querySelector(".project-wrapper").offsetHeight}`,
+                pin: true,
+                scrub: 1,
+              },
+            }
+          );
+          return () => {
+            pin.kill();
+          };
+        <>
+        </>
     }, []);
 
     return(
