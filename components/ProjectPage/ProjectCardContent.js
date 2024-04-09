@@ -67,7 +67,19 @@ export default function ProjectCardContent()
                         <p className="font-normal text-sm sm:text-lg lg:text-xl">
                           {data.desc}
                         </p>
-
+                    <div className="flex gap-1 sm:gap-5">
+                      <Tooltip title="Github" placement="top" color="primary">
+                        <motion.a
+                        href={data.github_url}
+                        title={`${data.title} github`}
+                        target="_blank"
+                        rel="noopener noreference"
+                        whileHover={{ scale: 1.2}}
+                        whileTap={{scale: 0.9, transition: { duration: 0.2}}}>
+                        <FaGithub size="40" className="scale-[70%] sm:scale-100"></FaGithub>
+                        </motion.a>
+                       </Tooltip>
+                    </div>
                     </div>
                     
                 </div>
