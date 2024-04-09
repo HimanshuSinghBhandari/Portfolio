@@ -40,7 +40,24 @@ export default function ProjectCardContent()
                       </Image>
                     </motion.a>
                 </div>
-                <div>
+                <div className="flex flex-col mt-2 justify-evenly gap-1 h-full w-[90%] lg:w-2/5">
+                    <div className="flex flex-wrap gap-1 sm:gap-2 mb-2">
+                        {data.skill.map((i, index) => (
+                            <span
+                            key={index}
+                            className="inline-block text-[10px] bg-gray-300 px-2 py-[0.2rem] rounded-lg text-blue-600 font-bold whitespace-nowrap sm:text-xs lg:text-lg">
+                               {i}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="flex flex-col lg:gap-2">
+                     <p className="font-semibold text-sm md:text-xl lg:text-3xl">
+                        {data.category}
+                     </p>
+                     <p className="font-thin text-md md:text-2xl lg:text-3xl xl:text-4xl whitespace-nowrap">
+                        {data.date}
+                     </p>
+                    </div>
                     
                 </div>
             </div>
