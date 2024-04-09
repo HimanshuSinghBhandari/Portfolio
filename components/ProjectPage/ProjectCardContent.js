@@ -57,6 +57,11 @@ export default function ProjectCardContent()
                      <p className="font-thin text-md md:text-2xl lg:text-3xl xl:text-4xl whitespace-nowrap">
                         {data.date}
                      </p>
+                     {data.refacDate && (
+                        <p className="font-thin text-xs sm:text-xl">
+                            refactoring: {data.refacDate}
+                        </p>
+                     )}
                     </div>
                     
                 </div>
