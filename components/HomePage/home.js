@@ -11,7 +11,7 @@ export default function Home() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0, 0.1],
-    ["  rgb(241 , 124 , 96)", "rgb(125 211 252)"]
+    ["rgb(253 224 71)", "rgb(125 211 252)"]
   );
   const onClickNext = () => {
     router.push("#about");
@@ -37,7 +37,7 @@ export default function Home() {
           className="text-4xl mb-5 font-samlip sm:text-5xl lg:text-8xl text-white/90 text-outline"
           style={{ scrollY, scale }}
         >
-          Hello, I'm Himanshu  
+          Hello, I&apos;m Himanshu
         </motion.h1>
         <motion.div
           className="flex flex-col items-center mt-2 lg:mt-10"
@@ -53,7 +53,7 @@ export default function Home() {
                   .deleteAll(100)
                   .pauseFor(1500)
                   .typeString(
-                    `Full Stack Developer<br><span style="font-weight:600;"}>N A M A S T E</span> `
+                    `Full Stack Developer<br><span style="font-weight:600;">N A M A S T E</span> `
                   )
                   .start();
               }}
