@@ -43,6 +43,7 @@
                 className="hidden lg:block overflow-hidden rounded-[15px] shadow-xl">
                     <Image
                     src={BackImg1}
+                    alt="Background image 1"
                     style={{height: "100%", objectFit:"cover"}} />
                 </motion.div>
              <div className="hidden lg:block">
@@ -63,6 +64,7 @@
              className="hidden lg:block overflow-hidden shadow-xl rounded-[15px]">
                 <Image
                 src={BackImg3}
+                alt="Background Image 3"
                 style={{ height: "100%", objectFit: "cover"}} />
              </motion.div>
             </div>
@@ -73,6 +75,7 @@
                 className="h-1/2 overflow-hidden rounded-tl-[15px] rounded-[15px] shadow-xl">
                     <Image
                     src={BackImg2}
+                    alt="BackGround Image 2"
                     style={{height: "100%", objectFit: "cover"}} />
                 </motion.div>
                 <div className="h-[90%] sm:h-1/2 justify-between flex flex-col">
