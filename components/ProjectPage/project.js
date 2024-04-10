@@ -1,9 +1,9 @@
 import {motion , useScroll, useAnimate, useTransform} from 'framer-motion'
-import { ScrollTrigger } from 'gsap/all';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ProjectcardContent from "./ProjectCardContent";
 import { useEffect, useRef } from 'react';
 import HeaderTitle from '../util/HeaderTitle';
-import { gsap } from 'gsap/gsap-core';
+import { gsap } from "gsap";
 
 export default function Project()
 {
@@ -16,7 +16,7 @@ export default function Project()
 
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
-    gsap.registerPlugin(ScrollTrigger);
+   gsap.registerPlugin(ScrollTrigger);
 
     //horizontal Gsap
     useEffect(() => {

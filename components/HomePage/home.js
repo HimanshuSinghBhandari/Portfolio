@@ -43,7 +43,7 @@ export default function Home() {
           className="flex flex-col items-center mt-2 lg:mt-10"
           style={{ scrollY, opacity }}
         >
-          <span className="text-xl text-center font-light tracking-wide sm:text-3xl lg:text-5xl">
+          <span className="text-xl text-center font-light tracking-wide sm:text-3xl lg:text-5xl ">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

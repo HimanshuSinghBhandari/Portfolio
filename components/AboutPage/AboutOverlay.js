@@ -43,8 +43,7 @@
                 className="hidden lg:block overflow-hidden rounded-[15px] shadow-xl">
                     <Image
                     src={BackImg1}
-                    style={{height: "100%", objectFit:"cover"}}>
-                    </Image>
+                    style={{height: "100%", objectFit:"cover"}} />
                 </motion.div>
              <div className="hidden lg:block">
                 <h2 className="flex justify-center items-center text-center h-full text-4xl">
@@ -64,8 +63,7 @@
              className="hidden lg:block overflow-hidden shadow-xl rounded-[15px]">
                 <Image
                 src={BackImg3}
-                style={{ height: "100%", objectFit: "cover"}}>
-                </Image>
+                style={{ height: "100%", objectFit: "cover"}} />
              </motion.div>
             </div>
             <div className="lg:w-1/2 flex flex-col gap-5 h-full text-gray-400 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r  hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:transition hover:duration-500">
@@ -75,8 +73,7 @@
                 className="h-1/2 overflow-hidden rounded-tl-[15px] rounded-[15px] shadow-xl">
                     <Image
                     src={BackImg2}
-                    style={{height: "100%", objectFit: "cover"}}>
-                    </Image>
+                    style={{height: "100%", objectFit: "cover"}} />
                 </motion.div>
                 <div className="h-[90%] sm:h-1/2 justify-between flex flex-col">
                     <div className="lg:hidden font-jalnan text-black italic">

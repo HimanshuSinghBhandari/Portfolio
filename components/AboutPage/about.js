@@ -47,8 +47,7 @@
                   src={aboutProfile}
                   loading="lazy"
                   style={{width: "100%", height: "100%", objectFit: "cover"}}
-                  className="rounded-full shadow-lg">
-                  </Image>
+                  className="rounded-full shadow-lg" />
                </motion.div>
                <motion.div className="relative w-[80%] lg:w-1/2">
                   <ul className="relative cursor-default">
