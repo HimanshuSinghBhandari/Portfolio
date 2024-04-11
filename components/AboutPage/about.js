@@ -41,7 +41,7 @@
                transition: {delay: 0.5, duration: 1},
             }}>
                <motion.div
-               className="h-[10rem] w-[10rem] sm:h-[30rem] sm:w-[30rem] lg:h-[27rem] lg:w-[27rem] md:h-[30rem] md:w-[30rem]"
+               className={`h-[10rem] w-[10rem] sm:h-[50rem] sm:w-[50rem] lg:h-[27rem] lg:w-[27rem] md:h-[30rem] md:w-[30rem]`}
                whileHover={{ y: -10}}>
                   <Image
                   src={aboutProfile}
