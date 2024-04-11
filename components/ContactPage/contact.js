@@ -28,6 +28,7 @@ export default function Contact() {
             transition: { delay: 0.3 },
           }}
         >
+          <></>
           <h3>CONTACT ME</h3>
         </motion.div>
         <ContactIconList />
