@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRouter } from "next/router";
 import { FiChevronDown } from "@react-icons/all-files/fi/FiChevronDown";
 import Typewriter from "typewriter-effect";
+import Button from "../Button/button";
 
 export default function Home() {
   const router = useRouter();
@@ -34,7 +35,7 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-4xl mb-5 font-samlip sm:text-5xl lg:text-8xl  text-outline"
+          className="text-4xl mb-5 font-samlip sm:mt-15 sm:text-5xl lg:text-8xl  text-outline"
           style={{ scrollY, scale }}
         >
           Hello, I&apos;m Himanshu
@@ -82,6 +83,18 @@ export default function Home() {
             <span className="text-sm lg:text-lg">A B O U T</span>
           </div>
         </motion.div>
+        <motion.a
+          href="https://drive.google.com/file/d/1AxwzlO-Wz_WviBYZOjetwFX0StlMB9_r/view?usp=sharing"
+          className="bg-[rgb(251,236,93)] text-black px-3 py-1 rounded-full mt-5 sm:block lg:hidden hover:bg-yellow-300 transition-colors duration-300 font-medium text-sm border border-black"
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          onClick={() => {
+            // Add your resume button functionality here
+          }}
+        >
+          Resume
+        </motion.a>
       </motion.div>
     </section>
   );
