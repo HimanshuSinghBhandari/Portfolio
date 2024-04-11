@@ -85,10 +85,11 @@ export default function Home() {
         </motion.div>
         <motion.a
           href="https://drive.google.com/file/d/1AxwzlO-Wz_WviBYZOjetwFX0StlMB9_r/view?usp=sharing"
-          className="bg-[rgb(251,236,93)] text-black px-3 py-1 rounded-full mt-5 sm:block lg:hidden hover:bg-yellow-300 transition-colors duration-300 font-medium text-sm border border-black"
+          className="bg-[rgb(251,236,93)] text-black px-5 py-2 rounded-full mt-5 sm:block lg:hidden hover:bg-yellow-300 transition-colors duration-300 font-medium text-sm border border-black"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
+          style={{ opacity }}
           onClick={() => {
             // Add your resume button functionality here
           }}
