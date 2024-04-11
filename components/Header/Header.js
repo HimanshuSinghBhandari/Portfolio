@@ -51,6 +51,18 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+      <motion.h1
+        className="absolute hidden items-center justify-center right-0 w-36 h-20 text-2xl font-bold lg:flex"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+      >
+        <Link title="Resume" href="https://drive.google.com/file/d/1AxwzlO-Wz_WviBYZOjetwFX0StlMB9_r/view?usp=sharing" className="text-md">
+           RESUME
+          {/* <p className="font-normal font-extralight text-xs text-center">
+          Click here
+          </p> */}
+        </Link>
+      </motion.h1>
     </motion.header>
   );
 }

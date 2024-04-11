@@ -60,11 +60,11 @@
                            transition: { duration: 0.5},
                         }}>
                         <p className="block font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 text-black">{data.title}</p>
-                        <p className="font-thin text-xs sm:text-md lg:text-xl">{data.contetnt}</p>
+                        <p className="font-thin text-xs sm:text-md sm:font-thin lg:text-xl">{data.contetnt}</p>
                         </motion.li>
                      ))}
                   </ul>
-                  <Button className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-5" onClick={toggleView}> Discover more </Button>
+                  <Button className="absolute bottom-0 left-1/2 transform sm:font-thin -translate-x-1/2 mb-5" onClick={toggleView}> Discover more </Button>
                </motion.div>
             </motion.div>
              {view ? <Overlay toggleView={toggleView}/> : null}
